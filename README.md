@@ -1,2 +1,5 @@
-# Object-detection-in-Video-or-Webcam-
+# Object detection-in Video input or Webcam videos
+
+Using GUI you can select input video file or start webcam. Using the code we can put bounding box around the largest object in each frame.
+
 
