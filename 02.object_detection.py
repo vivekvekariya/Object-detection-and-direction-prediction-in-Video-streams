@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Aug 19 01:37:03 2019
-
-@author: vivek
-"""
-
 import numpy as np
 import cv2
 from collections import deque
@@ -17,9 +10,7 @@ pts = deque()
 def objectdetection(inputpath,mode,signal):
     if signal == 1:
         global pts,counter,direction
-
-        #outputpath = inputpath[:-4]+'_out.mp4'
-
+        
         if mode == 'webcam':
             capture = cv2.VideoCapture(0) #Capture from Webcam.
         elif mode == 'video':
@@ -34,9 +25,8 @@ def objectdetection(inputpath,mode,signal):
         width = int(capture.get(cv2.CAP_PROP_FRAME_WIDTH))
         height = int(capture.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
-        #print(fps,width,height)
-
         fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+       
         try: 
             outputpath = inputpath[:-4]+'_out.mp4'
             output = cv2.VideoWriter(outputpath,fourcc, fps, (width,height))
