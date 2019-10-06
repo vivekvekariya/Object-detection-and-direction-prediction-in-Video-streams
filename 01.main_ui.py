@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Aug 19 01:51:37 2019
-
-@author: vivek
-"""
 #Note: Keep the UI file in the same directory where .py script is there.
 
 import sys, os
